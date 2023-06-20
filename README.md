@@ -5,9 +5,13 @@ Existe una escalera con N escalones, y puedes subir 1 o 2 escalones a la vez. Da
 
 Por ejemplo, si N es 4, entonces hay 5 formas únicas:
 1, 1, 1, 1
+
 2, 1, 1
+
 1, 2, 1
+
 1, 1, 2
+
 2, 2
 
 ¿Qué pasaría si, en lugar de poder subir 1 o 2 escalones a la vez, pudieras subir cualquier número de un conjunto de enteros positivos X? Por ejemplo, si X = {1, 3, 5}, podrías subir 1, 3 o 5 escalones a la vez.
@@ -28,7 +32,9 @@ Complete esta la funcion anterior para que imprima por consola un arreglo con la
 shortest_dist('helloworld', 'l')
 
 h e l l o w o r l d
+
 [2, 1, 0, 0, 1, 2, 2, 1, 0, 1]
+
 0 1 2 3 4 5 6 7 8 9
 
 ### ---------- Código del ejercicio ----------
