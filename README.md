@@ -4,7 +4,6 @@
 Existe una escalera con N escalones, y puedes subir 1 o 2 escalones a la vez. Dado N, escribe una función que devuelva el número de formas únicas en que puedes subir la escalera. El orden de los pasos importa.
 
 Por ejemplo, si N es 4, entonces hay 5 formas únicas:
-
 1, 1, 1, 1
 2, 1, 1
 1, 2, 1
