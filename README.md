@@ -15,6 +15,8 @@ Por ejemplo, si N es 4, entonces hay 5 formas únicas:
 
 Realiza un programa en Typescript que imprima por consola las formas únicas de subir las escaleras.
 
+### ---------- Código del ejercicio ----------
+
 
 
 ## 2. Uber preguntó recientemente el problema:
@@ -30,6 +32,8 @@ h e l l o w o r l d
 [2, 1, 0, 0, 1, 2, 2, 1, 0, 1]
 0 1 2 3 4 5 6 7 8 9
 
+### ---------- Código del ejercicio ----------
+
 
 
 ## 3. Facebook preguntó recientemente el problema: (Slider Window)
@@ -44,3 +48,39 @@ Output: 1
 Explicación: El subarreglo más pequeño con una suma mayor o igual a '7' es [8].
 
 Nota: No puedes usar ciclos anidados para resolver el problema.
+
+### ---------- Código del ejercicio ----------
+
+function encontrarSubarreglo(nums: number[], S: number): number {
+  let longitudMinima = Infinity; 
+  let sumaActual = 0;
+  let inicio = 0;
+
+  for (let fin = 0; fin < nums.length; fin++) {
+    sumaActual += nums[fin];      // Agregar el elemento actual al subarreglo
+
+     // Si la suma actual es mayor o igual a S, intentar reducir la longitud del subarreglo
+    while (sumaActual >= S) {
+      longitudMinima = Math.min(longitudMinima, fin - inicio + 1);    // Actualizar la longitud mínima
+      sumaActual -= nums[inicio];    // Eliminar el elemento más a la izquierda del subarreglo
+      inicio++;    // Mover el puntero de inicio hacia la derecha
+    }
+    }
+  }
+
+  if (longitudMinima === Infinity) {
+    return 0;    // No se encontró ningún subarreglo válido
+  } else {
+    return longitudMinima;
+  }
+}
+
+// Ejemplos de uso
+const nums1 = [2, 1, 5, 2, 3, 2];
+const S1 = 7;
+console.log(encontrarSubarreglo(nums1, S1));    // Output: 2
+
+const nums2 = [2, 1, 5, 2, 8];
+const S2 = 7;
+console.log(encontrarSubarreglo(nums2, S2));    // Output: 1
+
