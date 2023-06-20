@@ -57,30 +57,26 @@ function encontrarSubarreglo(nums: number[], S: number): number {
   let inicio = 0;
 
   for (let fin = 0; fin < nums.length; fin++) {
-    sumaActual += nums[fin];      // Agregar el elemento actual al subarreglo
+    sumaActual += nums[fin];
 
-     // Si la suma actual es mayor o igual a S, intentar reducir la longitud del subarreglo
     while (sumaActual >= S) {
-      longitudMinima = Math.min(longitudMinima, fin - inicio + 1);    // Actualizar la longitud mínima
-      sumaActual -= nums[inicio];    // Eliminar el elemento más a la izquierda del subarreglo
-      inicio++;    // Mover el puntero de inicio hacia la derecha
-    }
+      longitudMinima = Math.min(longitudMinima, fin - inicio + 1); 
+      sumaActual -= nums[inicio]; 
+      inicio++; 
     }
   }
 
   if (longitudMinima === Infinity) {
-    return 0;    // No se encontró ningún subarreglo válido
+    return 0; 
   } else {
     return longitudMinima;
   }
 }
 
-// Ejemplos de uso
 const nums1 = [2, 1, 5, 2, 3, 2];
 const S1 = 7;
-console.log(encontrarSubarreglo(nums1, S1));    // Output: 2
+console.log(encontrarSubarreglo(nums1, S1));
 
 const nums2 = [2, 1, 5, 2, 8];
 const S2 = 7;
-console.log(encontrarSubarreglo(nums2, S2));    // Output: 1
-
+console.log(encontrarSubarreglo(nums2, S2)); 
