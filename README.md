@@ -78,14 +78,6 @@ function encontrarSubarreglo(nums: number[], S: number): number {
   }
 }
 
-const nums1 = [2, 1, 5, 2, 3, 2];
+const nums1 = [2, 1, 5, 2, 3, 2];                                                                const S1 = 7;                                                                                    console.log(encontrarSubarreglo(nums1, S1));
 
-const S1 = 7;
-
-console.log(encontrarSubarreglo(nums1, S1));
-
-const nums2 = [2, 1, 5, 2, 8];
-
-const S2 = 7;
-
-console.log(encontrarSubarreglo(nums2, S2)); 
+const nums2 = [2, 1, 5, 2, 8];                                                                       const S2 = 7;                                                            console.log(encontrarSubarreglo(nums2, S2)); 
