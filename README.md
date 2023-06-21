@@ -1,4 +1,4 @@
-# 2020-0671 
+# Pamela Abreu 2020-0671 
 
 ## 1. Este problema fue pedido por Amazon.
 Existe una escalera con N escalones, y puedes subir 1 o 2 escalones a la vez. Dado N, escribe una función que devuelva el número de formas únicas en que puedes subir la escalera. El orden de los pasos importa.
