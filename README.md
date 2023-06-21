@@ -1,6 +1,8 @@
 # Pamela Abreu 2020-0671 
 
-## 1. Este problema fue pedido por Amazon.
+## Ejercicio No.1
+
+Este problema fue pedido por Amazon.
 Existe una escalera con N escalones, y puedes subir 1 o 2 escalones a la vez. Dado N, escribe una función que devuelva el número de formas únicas en que puedes subir la escalera. El orden de los pasos importa.
 
 Por ejemplo, si N es 4, entonces hay 5 formas únicas:                                                                                                                      
@@ -14,7 +16,7 @@ Por ejemplo, si N es 4, entonces hay 5 formas únicas:
 
 Realiza un programa en Typescript que imprima por consola las formas únicas de subir las escaleras.
 
-### Explicacion del código
+- Explicacion del código
 
 La función countUniqueSteps calcula el número de formas únicas de subir una escalera de tamaño N usando los pasos en el array X. Se inicializa una matriz memo con el primer elemento establecido en 1, ya que hay una única forma de subir una escalera vacía. Se utiliza un bucle for para iterar desde 1 hasta N. Dentro del bucle, se calcula el número total de formas únicas para el tamaño actual de la escalera, verificando cada paso en el array X y agregando las formas únicas de los tamaños de escalera anteriores almacenados en memo. El resultado se almacena en memo[N] y se devuelve.
 
@@ -24,10 +26,12 @@ La función generateUniqueSteps genera y muestra todas las formas únicas de sub
 
 Al final del código, se declaran dos tamaños de escalera (N1 y N2) y arrays de pasos posibles (X1 y X2). Se llaman a printUniqueSteps dos veces con los respectivos valores de N y X, y los resultados se muestran en la consola.
 
-### Big O
+- Big O
 
 
-## 2. Uber preguntó recientemente el problema:
+## Ejercicio No.2
+
+Uber preguntó recientemente el problema:
 Dada una cadena s y un carácter c, encuentre la distancia entre todos los caracteres de la cadena y el carácter c de la cadena s. Puede suponer que el carácter c aparecerá al menos una vez en la cadena.
 
 Aquí hay un ejemplo y un código de inicio:
@@ -40,7 +44,7 @@ h e l l o w o r l d
 [2, 1, 0, 0, 1, 2, 2, 1, 0, 1]                                                                                                                                              
 0 1 2 3 4 5 6 7 8 9
 
-### Explicacion del código
+- Explicacion del código
 
 En la función shortestDist esta lo que hará es calcular las distancias más cortas entre cada aparición de un carácter específico (c) en una cadena de texto (s) y el carácter anterior o siguiente más cercano. Luego, devuelve un array que contiene estas distancias.
 
@@ -50,10 +54,12 @@ Después de completar el primer bucle, se reinicia la variable prevIdx con Infin
 
 Finalmente, la función devuelve el array distances, que contiene las distancias más cortas para cada aparición del carácter c en la cadena s. En el código de ejemplo se utiliza la cadena 'Pamela' y el carácter 'a', y el resultado se imprime en la consola utilizando console.log.
 
-### Big O
+- Big O
 
 
-## 3. Facebook preguntó recientemente el problema: (Slider Window)
+## Ejercicio No.3
+
+Facebook preguntó recientemente el problema: (Slider Window)
 Dada una matriz de números positivos y un número positivo 'S', encuentre la longitud del subarreglo contiguo más pequeño cuya suma es mayor o igual que 'S'. Retorna 0, si no existe tal subarreglo
 
 Input: [2, 1, 5, 2, 3, 2], S=7                                                                                                                                          
@@ -66,7 +72,7 @@ Explicación: El subarreglo más pequeño con una suma mayor o igual a '7' es [8
 
 Nota: No puedes usar ciclos anidados para resolver el problema.
 
-### Explicacion del código
+- Explicacion del código
 
 En la función encontrarSubarreglo está busca la longitud mínima de un subarreglo cuya suma sea mayor o igual a un número objetivo en un array dado. El código inicializa variables para realizar un seguimiento de la longitud mínima, la suma acumulada y el índice de inicio del subarreglo actual. Luego, utiliza bucles for y while para recorrer el array y calcular la longitud mínima del subarreglo.
 
@@ -76,4 +82,4 @@ Después de completar el bucle for, se verifica si la longitud mínima sigue sie
 
 Fuera de la función, se declaran arrays de números y números objetivo para probar la función. Se llama a la función encontrarSubarreglo con los parámetros correspondientes y se imprime el resultado en la consola.
 
-### Big O
+- Big O
