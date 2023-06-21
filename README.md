@@ -102,10 +102,10 @@ function encontrarSubarreglo(nums: number[], S: number): number {
     }
   }
 
-  if (longitudMinima === Infinity) {
-    return 0; 
-  } else {
-    return longitudMinima;
+  if (longitudMinima === Infinity) {                                                         
+  return 0;                                                                                   
+  } else {                                                                                   
+  return longitudMinima;
   }
 }
 
