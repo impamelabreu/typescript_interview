@@ -46,8 +46,6 @@ const X2: number[] = [1, 3, 5];
 printUniqueSteps(N2, X2);
 
 
-
-
 // ---------- 2do Ejercicio ---------- //
 
 function shortestDist(s: string, c: string): number[] {
@@ -81,8 +79,38 @@ const c: string = 'a';
 console.log(shortestDist(s, c)); 
 
 
-
-
 // ---------- 3er Ejercicio ---------- //
+
+function encontrarSubarreglo(nums: number[], S: number): number {
+    
+    let longitudMinima = Infinity;
+    let sumaActual = 0;
+    let inicio = 0;
+    
+    for (let fin = 0; fin < nums.length; fin++) {
+        sumaActual += nums[fin];
+        
+        while (sumaActual >= S) {
+            longitudMinima = Math.min(longitudMinima, fin - inicio + 1);
+            sumaActual -= nums[inicio];
+            inicio++;
+        }
+    }
+    
+    if (longitudMinima === Infinity) {
+        return 0;
+    } else {
+        return longitudMinima;
+    }
+}
+
+const nums1 = [2, 1, 5, 2, 3, 2];
+const S1 = 7;
+console.log(encontrarSubarreglo(nums1, S1));
+
+
+const nums2 = [2, 1, 5, 2, 8];
+const S2 = 7;
+console.log(encontrarSubarreglo(nums2, S2));
 
 
