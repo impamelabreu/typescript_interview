@@ -92,7 +92,7 @@ function encontrarSubarreglo(nums: number[], S: number): number {
   let sumaActual = 0;                                                                                                                                                     
   let inicio = 0;
 
-  for (let fin = 0; fin < nums.length; fin++) {
+  for (let fin = 0; fin < nums.length; fin++) {                                              
     sumaActual += nums[fin];
 
     while (sumaActual >= S) {
@@ -114,6 +114,6 @@ const S1 = 7;
 console.log(encontrarSubarreglo(nums1, S1));
 
 
-const nums2 = [2, 1, 5, 2, 8];                                                                       
+const nums2 = [2, 1, 5, 2, 8];                                                                     
 const S2 = 7;                                                            
 console.log(encontrarSubarreglo(nums2, S2)); 
