@@ -1,6 +1,6 @@
 # Pamela Abreu 2020-0671 
 
-## Ejercicio No.1
+## Ejercicio No. 1
 
 Este problema fue pedido por Amazon.
 
@@ -29,8 +29,15 @@ Al final del código, se declaran dos tamaños de escalera (N1 y N2) y arrays de
 
 - ### Big O
 
+La función countUniqueSteps utiliza la función auxiliar helper para calcular el número de formas únicas de subir una escalera. Helper tiene una complejidad de O(N * M) debido a un bucle for que recorre los elementos de X, y utiliza un array memo para memoizar los cálculos y evitar repeticiones de longitud N, lo que tiene una complejidad adicional de O(N). En general, countUniqueSteps tiene una complejidad aproximada de O(N * M).
 
-## Ejercicio No.2
+La función printUniqueSteps llama a countUniqueSteps una vez, por lo que su complejidad también es O(N * M).
+
+La función generateUniqueSteps es llamada por printUniqueSteps y realiza un bucle for que recorre los elementos de X. La complejidad de generateUniqueSteps es O(M) ya que se realiza una llamada recursiva por cada elemento de X.
+
+Por lo cual, la complejidad general del programa puede aproximarse a O(N * M), donde N es el número de escalones y M es el tamaño del array X. Esto significa que el tiempo de ejecución aumentará proporcionalmente al número de escalones y al tamaño del conjunto de pasos posibles.
+
+## Ejercicio No. 2
 
 Uber preguntó recientemente el problema:
 
@@ -58,6 +65,13 @@ Finalmente, la función devuelve el array distances, que contiene las distancias
 
 - ### Big O
 
+El código tiene una big o de tiempo cuadrática, O(n^2), donde "n" es el número de caracteres en la cadena de entrada "s". Esto se debe a que utiliza dos bucles "for" anidados: uno para recorrer cada carácter en la cadena y otro para encontrar la distancia mínima entre el carácter actual y el carácter objetivo "c".
+
+El primer bucle "for" tiene una complejidad de O(n), ya que recorre la cadena "s" completa una vez. Dentro de este bucle, el segundo bucle "for" también tiene una complejidad de O(n), ya que también recorre la cadena "s" completa en cada iteración del primer bucle.
+
+Dado que ambos bucles "for" están anidados, la complejidad total del algoritmo es O(n * n) = O(n^2).
+
+Por ende, el tiempo de ejecución del algoritmo aumenta cuadráticamente a medida que crece el tamaño de la cadena de entrada "s".
 
 ## Ejercicio No.3
 
@@ -85,3 +99,11 @@ Después de completar el bucle for, se verifica si la longitud mínima sigue sie
 Fuera de la función, se declaran arrays de números y números objetivo para probar la función. Se llama a la función encontrarSubarreglo con los parámetros correspondientes y se imprime el resultado en la consola.
 
 - ### Big O
+
+El codigo utiliza el enfoque de ventana deslizante para resolver el problema de encontrar la longitud mínima de un subarreglo cuya suma sea mayor o igual a un valor objetivo "S". Este enfoque se basa en el uso de dos punteros que delimitan la ventana en el arreglo. El bucle principal se ejecuta una vez por cada elemento en el arreglo, lo que da lugar a una complejidad de O(N), donde N es el número de elementos en el arreglo.
+
+Dentro de este bucle, se realizan operaciones constantes como sumar y restar elementos del arreglo, actualizar la longitud mínima y mover los punteros de la ventana. Estas operaciones tienen una complejidad de O(1), ya que no dependen del tamaño del arreglo.
+
+En el peor de los casos, el bucle principal se ejecutará N veces y, en cada iteración, el bucle interno se ejecutará mientras la suma de la ventana sea mayor o igual a "S". Sin embargo, el número total de iteraciones del bucle interno no superará N, ya que los punteros solo se mueven hacia adelante y nunca retroceden en el arreglo.
+
+En conjunto, el código tiene una complejidad de O(N), lo que implica que el tiempo de ejecución aumenta linealmente a medida que crece el tamaño del arreglo de entrada. Esto lo hace una solución eficiente para el problema en consideración.
