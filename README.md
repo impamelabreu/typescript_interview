@@ -59,7 +59,8 @@ function generateUniqueSteps(N: number, X: number[], path: string): void {
 
 const N1: number = 4;                                                                         
 const X1: number[] = [1, 2];                                                      
-printUniqueSteps(N1, X1);
+printUniqueSteps(N1, X1);                                                                
+console.log("-----------------")
 
 const N2: number = 6;                                                                          
 const X2: number[] = [1, 3, 5];                                                  
