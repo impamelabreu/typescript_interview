@@ -36,19 +36,19 @@ function countUniqueSteps(N: number, X: number[]): number {
   return memo[N];                                                                                  
 }
 
-function printUniqueSteps(N: number, X: number[]): void {
-  const uniqueSteps = countUniqueSteps(N, X);
+function printUniqueSteps(N: number, X: number[]): void {                                      
+  const uniqueSteps = countUniqueSteps(N, X);                                         
   console.log(`El número de formas únicas de subir la escalera es: ${uniqueSteps}`);
 
-  console.log("Formas únicas de subir la escalera:");
-  generateUniqueSteps(N, X, "");
+  console.log("Formas únicas de subir la escalera:");                         
+  generateUniqueSteps(N, X, "");                                                                   
 }
 
-function generateUniqueSteps(N: number, X: number[], path: string): void {
-  if (N === 0) {
-    console.log(path);
-    return;
-  }
+function generateUniqueSteps(N: number, X: number[], path: string): void {                        
+  if (N === 0) {                                                                   
+    console.log(path);                                                                        
+    return;                                                                                        
+}
 
   for (let i = 0; i < X.length; i++) {                                                            
     if (N - X[i] >= 0) {                                                        
