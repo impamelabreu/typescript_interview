@@ -18,6 +18,10 @@ Por ejemplo, si N es 4, entonces hay 5 formas únicas:
 
 Realiza un programa en Typescript que imprima por consola las formas únicas de subir las escaleras.
 
+### Explicacion del código
+
+### Big O
+
 
 ## 2. Uber preguntó recientemente el problema:
 Dada una cadena s y un carácter c, encuentre la distancia entre todos los caracteres de la cadena y el carácter c de la cadena s. Puede suponer que el carácter c aparecerá al menos una vez en la cadena.
@@ -34,6 +38,10 @@ h e l l o w o r l d
 
 0 1 2 3 4 5 6 7 8 9
 
+### Explicacion del código
+
+### Big O
+
 
 ## 3. Facebook preguntó recientemente el problema: (Slider Window)
 Dada una matriz de números positivos y un número positivo 'S', encuentre la longitud del subarreglo contiguo más pequeño cuya suma es mayor o igual que 'S'. Retorna 0, si no existe tal subarreglo
@@ -48,3 +56,6 @@ Explicación: El subarreglo más pequeño con una suma mayor o igual a '7' es [8
 
 Nota: No puedes usar ciclos anidados para resolver el problema.
 
+### Explicacion del código
+
+### Big O
