@@ -39,6 +39,36 @@ h e l l o w o r l d
 
 ### ---------- Código del ejercicio ----------
 
+function shortestDist(s: string, c: string): number[] {
+  const distances: number[] = [];
+  let prevIdx = -Infinity;
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === c) {
+      distances.push(0);
+      prevIdx = i;
+    } else {
+      distances.push(i - prevIdx);
+    }
+  }
+
+  prevIdx = Infinity;
+  for (let i = s.length - 1; i >= 0; i--) {
+    if (s[i] === c) {
+      prevIdx = i;
+    } else {
+      distances[i] = Math.min(distances[i], prevIdx - i);
+    }
+  }
+
+  return distances;
+}
+
+const s: string = 'Pamela';
+const c: string = 'a';
+
+console.log(shortestDist(s, c)); 
+
 
 
 ## 3. Facebook preguntó recientemente el problema: (Slider Window)
