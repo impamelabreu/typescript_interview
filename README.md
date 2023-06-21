@@ -73,17 +73,18 @@ Dado que ambos bucles "for" están anidados, la complejidad total del algoritmo 
 
 Por ende, el tiempo de ejecución del algoritmo aumenta cuadráticamente a medida que crece el tamaño de la cadena de entrada "s".
 
-## Ejercicio No.3
+## Ejercicio No. 3
 
 Facebook preguntó recientemente el problema: (Slider Window)
+
 Dada una matriz de números positivos y un número positivo 'S', encuentre la longitud del subarreglo contiguo más pequeño cuya suma es mayor o igual que 'S'. Retorna 0, si no existe tal subarreglo
 
-Input: [2, 1, 5, 2, 3, 2], S=7                                                                                                                                          
-Output: 2                                                                                                                                                          
+Input: [2, 1, 5, 2, 3, 2], S=7                                                                      
+Output: 2                                                                               
 Explicación: El subarreglo más pequeño con una suma mayor o igual a '7' es [5, 2].
 
-Input: [2, 1, 5, 2, 8], S=7                                                                                                                                              
-Output: 1                                                                                                                                                          
+Input: [2, 1, 5, 2, 8], S=7                                                                         
+Output: 1                                                                               
 Explicación: El subarreglo más pequeño con una suma mayor o igual a '7' es [8].
 
 Nota: No puedes usar ciclos anidados para resolver el problema.
