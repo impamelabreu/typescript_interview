@@ -34,6 +34,14 @@ h e l l o w o r l d
 
 ### Explicacion del código
 
+La función shortestDist calcula las distancias más cortas entre cada aparición de un carácter específico (c) en una cadena de texto (s) y el carácter anterior o siguiente más cercano. Devuelve un array que contiene estas distancias.
+
+El algoritmo utiliza dos bucles for. En el primer bucle, itera sobre cada carácter en la cadena s y verifica si el carácter es igual a c. Si es así, agrega un 0 al array distances para representar que la distancia al carácter actual es cero y actualiza la variable prevIdx con el índice actual. Si el carácter no es igual a c, calcula la distancia entre el carácter actual y el carácter anterior más cercano (i - prevIdx) y la agrega al array distances.
+
+Después de completar el primer bucle, se reinicia la variable prevIdx con Infinity. Luego, se inicia el segundo bucle en sentido inverso, desde el último carácter de la cadena s. Dentro de este bucle, se actualiza la variable prevIdx con el índice actual cuando se encuentra un carácter igual a c. Si el carácter no es igual a c, se calcula la distancia más corta entre el carácter actual y el carácter siguiente más cercano. Esta distancia se calcula como el mínimo entre la distancia ya almacenada en distances[i] y la diferencia entre prevIdx e i. La distancia más corta se actualiza en distances[i].
+
+Finalmente, la función devuelve el array distances, que contiene las distancias más cortas para cada aparición del carácter c en la cadena s. En el código de ejemplo se utiliza la cadena 'Pamela' y el carácter 'a', y el resultado se imprime en la consola utilizando console.log.
+
 ### Big O
 
 
