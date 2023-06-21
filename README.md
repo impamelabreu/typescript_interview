@@ -87,8 +87,9 @@ Nota: No puedes usar ciclos anidados para resolver el problema.
 ### ---------- Código del ejercicio ----------
 
 function encontrarSubarreglo(nums: number[], S: number): number {
-  let longitudMinima = Infinity; 
-  let sumaActual = 0;
+  
+  let longitudMinima = Infinity;                                                                                                                                        
+  let sumaActual = 0;                                                                                                                                                     
   let inicio = 0;
 
   for (let fin = 0; fin < nums.length; fin++) {
