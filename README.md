@@ -43,14 +43,14 @@ function shortestDist(s: string, c: string): number[] {
   const distances: number[] = [];                                                                                                                                          
   let prevIdx = -Infinity;
 
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] === c) {
-      distances.push(0);
-      prevIdx = i;
-    } else {
-      distances.push(i - prevIdx);
-    }
-  }
+  for (let i = 0; i < s.length; i++) {                                                           
+    if (s[i] === c) {                                                                        
+      distances.push(0);                                                                    
+      prevIdx = i;                                                                                
+      } else {                                                                        
+      distances.push(i - prevIdx);                                                                
+      }                                                                                            
+}
 
   prevIdx = Infinity;
   for (let i = s.length - 1; i >= 0; i--) {
@@ -61,10 +61,10 @@ function shortestDist(s: string, c: string): number[] {
     }
   }
 
-  return distances;
+  return distances;                                                                                
 }
 
-const s: string = 'Pamela';
+const s: string = 'Pamela';                                                                    
 const c: string = 'a';
 
 console.log(shortestDist(s, c)); 
