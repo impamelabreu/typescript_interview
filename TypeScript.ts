@@ -1,4 +1,4 @@
-// ---------- 1er Ejercicio ---------- //
+// ------------ 1er Ejercicio ------------ //
 
 function countUniqueSteps(N: number, X: number[]): number {
     const memo: number[] = [1];
@@ -46,7 +46,8 @@ const X2: number[] = [1, 3, 5];
 printUniqueSteps(N2, X2);
 
 
-// ---------- 2do Ejercicio ---------- //
+
+// ------------ 2do Ejercicio ------------ //
 
 function shortestDist(s: string, c: string): number[] {
     const distances: number[] = [];
@@ -79,7 +80,8 @@ const c: string = 'a';
 console.log(shortestDist(s, c)); 
 
 
-// ---------- 3er Ejercicio ---------- //
+
+// ------------ 3er Ejercicio ------------ //
 
 function encontrarSubarreglo(nums: number[], S: number): number {
     
