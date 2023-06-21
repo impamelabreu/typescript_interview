@@ -52,14 +52,14 @@ function shortestDist(s: string, c: string): number[] {
       }                                                                                            
 }
 
-  prevIdx = Infinity;
-  for (let i = s.length - 1; i >= 0; i--) {
-    if (s[i] === c) {
-      prevIdx = i;
-    } else {
-      distances[i] = Math.min(distances[i], prevIdx - i);
-    }
-  }
+  prevIdx = Infinity;                                                                            
+  for (let i = s.length - 1; i >= 0; i--) {                                                      
+  if (s[i] === c) {                                                                          
+    prevIdx = i;                                                                                  
+  } else {                                                                              
+    distances[i] = Math.min(distances[i], prevIdx - i);                                            
+  }                                                                                                
+}
 
   return distances;                                                                                
 }
