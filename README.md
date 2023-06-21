@@ -71,6 +71,7 @@ console.log(shortestDist(s, c));
 
 
 
+
 ## 3. Facebook preguntó recientemente el problema: (Slider Window)
 Dada una matriz de números positivos y un número positivo 'S', encuentre la longitud del subarreglo contiguo más pequeño cuya suma es mayor o igual que 'S'. Retorna 0, si no existe tal subarreglo
 
