@@ -39,8 +39,8 @@ h e l l o w o r l d
 
 ### ---------- Código del ejercicio ----------
 
-function shortestDist(s: string, c: string): number[] {
-  const distances: number[] = [];
+function shortestDist(s: string, c: string): number[] {                                                                                                                
+  const distances: number[] = [];                                                                                                                                          
   let prevIdx = -Infinity;
 
   for (let i = 0; i < s.length; i++) {
