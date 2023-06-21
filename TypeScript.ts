@@ -17,7 +17,7 @@ function countUniqueSteps(N: number, X: number[]): number {
 
 function printUniqueSteps(N: number, X: number[]): void {
     const uniqueSteps = countUniqueSteps(N, X);
-    console.log(`El número de formas únicas de subir la escalera es: ${uniqueSteps}`);
+    console.log(`Número de formas únicas de subir la escalera es: ${uniqueSteps}`);
     
     console.log("Formas de subir la escalera:");
     generateUniqueSteps(N, X, "");
